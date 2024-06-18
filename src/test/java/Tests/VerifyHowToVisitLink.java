@@ -1,10 +1,10 @@
-package testcase1;
+package Tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class test1 {
+public class VerifyHowToVisitLink {
     public static void main(String[] args) {
 
         ChromeOptions options = new ChromeOptions();

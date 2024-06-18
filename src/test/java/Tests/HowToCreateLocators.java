@@ -1,10 +1,10 @@
-package testcase1;
+package Tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class test2 {
+public class HowToCreateLocators {
      public static void main(String[] args) {
 
           WebDriver driver = new ChromeDriver();
@@ -13,7 +13,7 @@ public class test2 {
           driver.manage().window().maximize();
 
           // name
-          // driver.findElement(By.name("search")).sendKeys("MacBook");
+          driver.findElement(By.name("search")).sendKeys("MacBook");
           // id
           boolean logoResult = driver.findElement(By.id("logo")).isDisplayed();
           if (logoResult == true) {
