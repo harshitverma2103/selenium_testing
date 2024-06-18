@@ -21,6 +21,10 @@ public class HowToCreateLocators {
           } else {
                System.out.println("fail");
           }
+
+          // linktext & partialLinkText
+          driver.findElement(By.linkText("Tablets")).click();
+          driver.findElement(By.partialLinkText("Table")).click();
           driver.quit();
      }
 }
