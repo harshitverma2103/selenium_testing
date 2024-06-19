@@ -25,6 +25,14 @@ public class HowToCreateLocators {
           // linktext & partialLinkText
           driver.findElement(By.linkText("Tablets")).click();
           driver.findElement(By.partialLinkText("Table")).click();
+
+          // xpath with single attribute
+
+          driver.findElement(By.xpath("//input[@placeholder='search']")).sendKeys("MacBook");
+
+          // xpath for multiple attribute
+
+          driver.findElement(By.xpath("//input[@name='search'][@placeholder='search']")).sendKeys("Tshirts");
           driver.quit();
      }
 }
